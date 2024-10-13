@@ -40,7 +40,6 @@ const [errors,setErrors]=useState({})
       const newError={};
       error.inner.forEach((err)=>{
         newError[err.path]=err.message;
-        console.log(newError)
       })
       setErrors(newError)
     }
